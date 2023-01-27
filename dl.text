@@ -1,0 +1,40 @@
+ <h1>หน้าหลัก. แบบฟอร์มลาออก</h1>
+  <br />
+  <form>
+    วันที่ <input type="date" name="" />
+    คณะ
+    <select name="" id="">
+      <option>กรุณาเลือกคณะ</option>
+      <option>บริหาร</option>
+      <option>ท่องเที่ยว</option>
+      <option>ศิลปศาสตร์</option>
+      <option>วิทยาศาสตร์</option>
+    </select>
+    
+    รหัสนศ <input type="text" name="stuid" id="" v-model="stuid" required /><br />
+    ชื่อ
+    <input type="text" name="stuName" id="" v-model="stuName" maxlength="20" required />
+    หมายเลขโทรศัพท์ <input type="" name="" id="" /> {{ stuName }}{{ stuid }}
+    <input type="submit" value="" />
+  </form>
+
+
+
+
+   export default {
+  data(){
+    return{
+      ID : null,
+      fName : null,
+      lName : null
+    }
+  },
+  methods: {
+    
+    getDate(){
+      console.log("Funfkjd")
+    }
+  }
+ }
+ 
+ 
